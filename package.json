@@ -1,0 +1,43 @@
+{
+  "name": "git-unsaved",
+  "description": "List the git repositories from a folder which have unsaved work.",
+  "keywords": [
+    "git",
+    "unsaved",
+    "list",
+    "the",
+    "repositories",
+    "from",
+    "a",
+    "folder",
+    "which",
+    "have",
+    "work"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
+  "homepage": "https://github.com/Bloggify/git-unsaved#readme",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "cli.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Bloggify/git-unsaved.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Bloggify/git-unsaved/issues"
+  }
+}
