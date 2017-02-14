@@ -44,7 +44,7 @@ new Tilda(`${__dirname}/../package.json`, {
         });
         console.log();
     }).on("directory", path => {
-        spinner.text = path;
+        spinner.text = path.slice(0, process.stdout.columns - 2);
         spinner.render();
     }).on("end", () => {
         spinner.stop();
