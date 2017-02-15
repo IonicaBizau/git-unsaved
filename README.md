@@ -42,6 +42,11 @@ Options:
   -v, --version         Displays version information.
   -h, --help            Displays this help.
 
+Examples:
+  $ git-unsaved # Scans the current directory
+  $ git-unsaved -p ~/projects # Scans the projects directory
+  $ git-unsaved | less -r # Pipe the output to `less`
+
 Documentation can be found at https://github.com/IonicaBizau/git-unsaved#readme.
 ```
 
