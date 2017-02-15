@@ -3,7 +3,7 @@
 
  [![Patreon](https://img.shields.io/badge/Support%20me%20on-Patreon-%23e6461a.svg)][patreon] [![PayPal](https://img.shields.io/badge/%24-paypal-f39c12.svg)][paypal-donations] [![AMA](https://img.shields.io/badge/ask%20me-anything-1abc9c.svg)](https://github.com/IonicaBizau/ama) [![Version](https://img.shields.io/npm/v/git-unsaved.svg)](https://www.npmjs.com/package/git-unsaved) [![Downloads](https://img.shields.io/npm/dt/git-unsaved.svg)](https://www.npmjs.com/package/git-unsaved) [![Get help on Codementor](https://cdn.codementor.io/badges/get_help_github.svg)](https://www.codementor.io/johnnyb?utm_source=github&utm_medium=button&utm_term=johnnyb&utm_campaign=github)
 
-> List the git repositories from a folder which have unsaved work.
+> Scan your projects directory for dirty git repositories.
 
 ## Features
 
@@ -33,7 +33,7 @@ Then, run `git-unsaved --help` and see what the CLI tool can do.
 $ git-unsaved --help
 Usage: git-unsaved [options]
 
-List the git repositories from a folder which have unsaved work.
+Scan your projects directory for dirty git repositories.
 
 Options:
   -p, --path <path>     A custom folder path (default: the current working
@@ -42,7 +42,7 @@ Options:
   -v, --version         Displays version information.
   -h, --help            Displays this help.
 
-Documentation can be found at https://github.com/Bloggify/git-unsaved#readme.
+Documentation can be found at https://github.com/IonicaBizau/git-unsaved#readme.
 ```
 
 ## :clipboard: Example
@@ -59,7 +59,34 @@ $ npm i --save git-unsaved
 ```js
 const gitUnsaved = require("git-unsaved");
 
-console.log(gitUnsaved());
+gitUnsaved(`${__dirname}/..`, (err, data) => {
+
+    if (err) {
+        // Something went really wrong
+        return;
+    }
+
+    console.log(data);
+    // { result: { branch: 'master', ahead: 4, dirty: 3, untracked: 0, stashes: 0 },
+    //   messages:
+    //    [ 'You have \u001b[1m4\u001b[22m \u001b[1munpushed commits\u001b[22m.',
+    //      'You have \u001b[1m3\u001b[22m \u001b[1mfiles you have to commit\u001b[22m.' ],
+    //   path: '/home/.../git-unsaved' }
+
+    data.messages.forEach(c => {
+        console.log(`  ${c}`);
+    });
+
+    // =>
+    // You have 4 unpushed commits.
+    // You have 3 files you have to commit.
+    console.log();
+}).on("directory", path => {
+    console.log(`Scanning ${path}`)
+    // Scanning /home/.../git-unsaved/...
+}).on("end", () => {
+    console.log("Done")
+});
 ```
 
 ## :memo: Documentation

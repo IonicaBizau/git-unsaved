@@ -24,6 +24,11 @@ new Tilda(`${__dirname}/../package.json`, {
           , type: Boolean
         }
     ]
+  , examples: [
+        "git-unsaved # Scans the current directory",
+        "git-unsaved -p ~/projects # Scans the projects directory",
+        "git-unsaved | less -r # Pipe the output to `less`"
+    ]
 }).main(action => {
     const path = action.options.path.value;
     const cwd = process.cwd();

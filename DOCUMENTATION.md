@@ -2,13 +2,13 @@
 
 You can see below the API reference of this module.
 
-### `gitUnsaved(a, b)`
-List the git repositories from a folder which have unsaved work.
+### `gitUnsaved(target, cb)`
+Searches for dirty repositories.
 
 #### Params
-- **Number** `a`: Param descrpition.
-- **Number** `b`: Param descrpition.
+- **String** `target`: The directory path.
+- **Function** `cb`: The callback function. It's going to be called for each dirty repository.
 
 #### Return
-- **Number** Return description.
+- **EventEmitter** An event emitter created by [`git-repos`](https://github.com/IonicaBizau/node-git-repos).
 
