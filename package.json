@@ -24,7 +24,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ionică Bizău <bizauionica@gmail.com> (https://ionicabizau.net)",
-  "homepage": "https://github.com/Bloggify/git-unsaved#readme",
+  "homepage": "https://github.com/IonicaBizau/git-unsaved#readme",
   "files": [
     "bin/",
     "app/",
@@ -38,24 +38,26 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Bloggify/git-unsaved.git"
+    "url": "git+ssh://git@github.com/IonicaBizau/git-unsaved.git"
   },
   "bugs": {
-    "url": "https://github.com/Bloggify/git-unsaved/issues"
+    "url": "https://github.com/IonicaBizau/git-unsaved/issues"
   },
   "blah": {
     "ex_img": "https://i.imgur.com/2LhUtwg.gif",
     "description": [
-        { "h2": "Features" },
-        {
-            "ul": [
-                ":rocket: Very fast–gives feedback while scanning the directories.",
-                ":zap: Clean output",
-                ":tokyo_tower: Checks if the local commits/branches are pushed to the remote",
-                ":eyes: Detects uncommited changes (new files, modified, deleted etc)",
-                ":dizzy: Lovely output"
-            ]
-        }
+      {
+        "h2": "Features"
+      },
+      {
+        "ul": [
+          ":rocket: Very fast–gives feedback while scanning the directories.",
+          ":zap: Clean output",
+          ":tokyo_tower: Checks if the local commits/branches are pushed to the remote",
+          ":eyes: Detects uncommited changes (new files, modified, deleted etc)",
+          ":dizzy: Lovely output"
+        ]
+      }
     ]
   },
   "dependencies": {
