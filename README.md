@@ -5,6 +5,17 @@
 
 > List the git repositories from a folder which have unsaved work.
 
+## Features
+
+ - :rocket: Very fast–gives feedback while scanning the directories.
+ - :zap: Clean output
+ - :tokyo_tower: Checks if the local commits/branches are pushed to the remote
+ - :eyes: Detects uncommited changes (new files, modified, deleted etc)
+ - :dizzy: Lovely output
+
+
+[![git-unsaved](https://i.imgur.com/2LhUtwg.gif)](#)
+
 ## :cloud: Installation
 
 You can install the package globally and use it as command line tool:

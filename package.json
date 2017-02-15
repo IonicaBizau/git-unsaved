@@ -3,7 +3,7 @@
     "git-unsaved": "bin/git-unsaved.js"
   },
   "name": "git-unsaved",
-  "description": "List the git repositories from a folder which have unsaved work.",
+  "description": "Scan your projects directory for dirty git repositories.",
   "keywords": [
     "git",
     "unsaved",
@@ -42,6 +42,21 @@
   },
   "bugs": {
     "url": "https://github.com/Bloggify/git-unsaved/issues"
+  },
+  "blah": {
+    "ex_img": "https://i.imgur.com/2LhUtwg.gif",
+    "description": [
+        { "h2": "Features" },
+        {
+            "ul": [
+                ":rocket: Very fast–gives feedback while scanning the directories.",
+                ":zap: Clean output",
+                ":tokyo_tower: Checks if the local commits/branches are pushed to the remote",
+                ":eyes: Detects uncommited changes (new files, modified, deleted etc)",
+                ":dizzy: Lovely output"
+            ]
+        }
+    ]
   },
   "dependencies": {
     "bug-killer": "^4.3.0",
