@@ -2,7 +2,8 @@
 
 You can see below the API reference of this module.
 
-### `gitUnsaved(target, cb)`
+### `exports(target, cb)`
+gitUnsaved
 Searches for dirty repositories.
 
 #### Params
