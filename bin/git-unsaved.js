@@ -39,8 +39,7 @@ new Tilda(`${__dirname}/../package.json`, {
     gitUnsaved(path, (err, data) => {
         spinner.clear();
         if (err) {
-            console.log(`${colorIt(`${err.message}`).red()}`);
-            return;
+            return console.log(`${colorIt(`${err.message} at ${path}`).red()}`);
         }
         const cPath = action.options.r.value ? (Path.relative(cwd, data.path) || ".") : data.path;
         console.log(`> ${colorIt(`${cPath}`).red()}`);
