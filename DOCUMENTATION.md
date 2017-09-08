@@ -7,6 +7,7 @@ gitUnsaved
 Searches for dirty repositories.
 
 #### Params
+
 - **String** `target`: The directory path.
 - **Function** `cb`: The callback function. It's going to be called for each dirty repository.
 
