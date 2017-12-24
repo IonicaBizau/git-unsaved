@@ -9,6 +9,7 @@
 
 ## Features
 
+
  - :rocket: Very fast–gives feedback while scanning the directories.
  - :zap: Clean output
  - :tokyo_tower: Checks if the local commits/branches are pushed to the remote
@@ -24,7 +25,11 @@ You can install the package globally and use it as command line tool:
 
 
 ```sh
-$ npm i -g git-unsaved
+# Using npm
+npm install --global git-unsaved
+
+# Using yarn
+yarn global add git-unsaved
 ```
 
 
@@ -55,10 +60,14 @@ Documentation can be found at https://github.com/IonicaBizau/git-unsaved#readme.
 ## :clipboard: Example
 
 
-Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm`:
+Here is an example how to use this package as library. To install it locally, as library, you can do that using `npm` (or `yarn`):
 
 ```sh
-$ npm i --save git-unsaved
+# Using npm
+npm install --save git-unsaved
+
+# Using yarn
+yarn add git-unsaved
 ```
 
 
@@ -104,7 +113,9 @@ There are few ways to get help:
 
  1. Please [post questions on Stack Overflow](https://stackoverflow.com/questions/ask). You can open issues with questions, as long you add a link to your Stack Overflow question.
  2. For bug reports and feature requests, open issues. :bug:
+
  3. For direct and quick help, you can [use Codementor](https://www.codementor.io/johnnyb). :rocket:
+
 
 
 ## :memo: Documentation
